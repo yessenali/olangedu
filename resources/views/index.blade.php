@@ -19,7 +19,7 @@
         <div class="header_top">
             <div class="container">
                 <div class="header_contacts">
-                <a class="header_email" href="#">olangeducation@gmail.com</a>
+                <a class="header_email" href="#modal">olangeducation@gmail.com</a>
                 <a class="header_btn" href="#">Тегін консультация</a>
             </div>
          </div>
@@ -240,7 +240,7 @@
                     <a class="header_btn" href="#">Тегін консультация</a>
                     <ul class="footer_list">
                         <br>
-                        <li><a class="footer_email" href="#">olangeducation@gmail.com</a></li>
+                        <li><a class="footer_email" href="#modal">olangeducation@gmail.com</a></li>
                         <li><a class="footer_adress" href="#">Жетісай а, Асанов 13 үй</a></li>
                     </ul>
                 </div>
