@@ -170,7 +170,8 @@
                 </div>
               </div>
               <div class="form__box">
-                <form>
+                <form method="get">
+                <input id="indicator" type="hidden" name="state">
                   <div class="form__box-inner">
                     <div class="form__box-left">
                       <label>
