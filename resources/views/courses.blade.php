@@ -208,7 +208,7 @@
                   </div>
                 </form>
                 <script>
-                    // Solution adding user
+                    // Solution adding user 
                      function add(){
                          document.getElementById("indicator").value="add";
                      }
