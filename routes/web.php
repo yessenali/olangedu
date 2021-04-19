@@ -45,4 +45,4 @@ Route::get('/{lang}', function($lang){
     return view('home');
 });
 
-Route::get('/{lang}', 'LocalizationController@index');
+Route::get('/{lang}', 'App\Http\Controllers\LocalizationController@index');
