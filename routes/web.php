@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 use App\Http\Controllers\MailController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +39,10 @@ Route::get('/uploadfile','App\Http\Controllers\UploadFileController@index');
 Route::post('/uploadfile','App\Http\Controllers\UploadFileController@showUploadFile');
 
 Route::get('mail/send', [MailController::class, 'send']);
+
+Route::get('/{lang}', function($lang){
+    App::setlocale($lang);
+    return view('home');
+});
+
+Route::get('/{lang}', 'LocalizationController@index');

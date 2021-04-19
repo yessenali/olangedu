@@ -15,35 +15,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header"> 
-        <div class="header_top">
-            <div class="container">
-                <div class="header_contacts">
-                <a class="header_email" data-fancybox data-src="#modal" href="javascript:;" href="#">olangeducation@gmail.com</a>
-                <a class="header_btn" href="#">Тегін консультация</a>
-            </div>
-         </div>
-        </div>
-        <div class="header_content">
-            <div class="container">
-                <div class="header_content-inner">
-            <div class="header_logo">
-                <a href="#">
-                    <img src="img/logo.png" alt="logotype" width="145px" height="40px">
-                </a>
-            </div>   
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.blade.php">Негізгі бет</a></li>
-                    <li><a class="aboutus" href="#">Біз жайлы</a></li>
-                    <li><a href="courses.blade.php">Курстар</a></li>
-                    <li><a href="private.blade.php">Жеке кабинет</a></li>
-                </ul>
-            </nav>
-        </div>
-     </div>
-    </div>
-    </header>
+@extends('layout')
+@section('content')
     <section class="slider">
         <div class="container">
             <div class="slider_inner">
@@ -256,7 +229,7 @@
         <div class="footer_copy">
             <div class="container">
                 <div class="footer_text">
-                    © 2021 Created by Yessenali Zhanaidar. Все права защищены.
+                    © 2021 Created by Yessenali Zhanaidar.
                 </div>
             </div>
         </div>
@@ -327,5 +300,7 @@
             scrollTo(regist2);
         })
     </script>
+
+@endsection
 </body>
 </html>
