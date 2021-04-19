@@ -44,92 +44,90 @@
      </div>
     </div>
     </header>
-    <section class="slider">
-        <div class="container">
-            <div class="slider_inner">
-                <div class="slider_item">
-                    <div class="slider_item-content">
-                    <div class="slider_title">
-                        Olang онлайн курс платформасы
-                    </div>
-                    <div class="slider_text">
-                        
-                    </div>
-                    <a href="#consult" class="slider_btn default_btn">
-                        Курсқа жазылу
-                    </a>
-                    
-                    </div>
-            </div>
-
-            <div class="slider_item">
-                <div class="slider_item-content">
-                <div class="slider_title">
-                    Let's study together
-                </div>
-                <div class="slider_text">
-                   
-                </div>
-                <a href="#consult" class="slider_btn default_btn">
-                    Get started
-                </a>
-                
-                </div>
-        </div>
-
-        <div class="slider_item">
-            <div class="slider_item-content">
-            <div class="slider_title">
-                Онлайн образовательная платформа Оланг
-            </div>
-            <div class="slider_text">
-              
-            </div>
-            <a href="#consult" class="slider_btn default_btn">
-                Записаться
-            </a>
-            
-            </div>
-    </div>
-        </div>
-    </section>
+    
 
     <!--Services-->
-    <section class="services">
+    <section class="courses">
         <div class="container">
-       <div class="services_items">
-           <div class="services_item">
-               <img src="img/icon-1.png" alt="" width="60px" height="60px">
-               <div class="services_item-title">
-                   ТІЛ КУРСТАРЫ
+       <div class="courses_items">
+           <div class="courses_item">
+               <img src="img/eng.jpg" alt="" width="60px" height="60px">
+               <div class="courses_item-title">
+                   Ағылшын тілі
                </div>
-               <div class="services_item-text">
-                   Ағылшын, түрік, араб, орыс тілдерінде курстар
+               <div class="courses_item-text">
+                   A1 - топ
                </div>
+               <a href="#consult" class="slider_btn default_btn">
+                Курсқа жазылу
+            </a>
 
            </div>
 
-           <div class="services_item">
-            <img  src="img/icon-2.png"  alt="" width="60px" height="60px">
-            <div class="services_item-title">
-                ВИДЕО ПЛАТФОРМА
+           <div class="courses_item">
+            <img  src="img/arab.jpg"  alt="" width="60px" height="60px">
+            <div class="courses_item-title">
+                Араб тілі
             </div>
-            <div class="services_item-text">
-                Арнайы жазылған видео дәрістерді көру үшін жеке кабинетіңіз болады
+            <div class="courses_item-text">
+                Араб әліппесінен бастап, тәжуид сабақтары
             </div>
-            
+            <a href="#consult" class="slider_btn default_btn">
+                Курсқа жазылу
+            </a>
         </div>
 
-        <div class="services_item">
-            <img src="img/icon-4.png" alt="" width="60px" height="60px">
-            <div class="services_item-title">
-                24/7
+        <div class="courses_item">
+            <img src="img/ru.jpg" alt="" width="60px" height="60px">
+            <div class="courses_item-title">
+                Орыс тілі
             </div>
-            <div class="services_item-text">
-               Дәрістер күніне 24 сағат бойы ашық тұрады
+            <div class="courses_item-text">
+              A1-A2 топтар бірге
             </div>
-            
+            <a href="#consult" class="slider_btn default_btn">
+                Курсқа жазылу
+            </a>
+        
         </div>
+          </div>
+          <div class="courses_items_2_part">
+            <div class="courses_item">
+                <img src="img/eng.jpg" alt="" width="60px" height="60px">
+                <div class="courses_item-title">
+                    Ағылшын тілі
+                </div>
+                <div class="courses_item-text">
+                   A2 - топ
+                </div>
+                <a href="#consult" class="slider_btn default_btn">
+                    Курсқа жазылу
+                </a>
+            </div>
+            <div class="courses_item">
+                <img src="img/turk.jpg" alt="" width="60px" height="60px">
+                <div class="courses_item-title">
+                   Түрік тілі
+                </div>
+                <div class="courses_item-text">
+                    А1 - топ
+                </div>
+                <a href="#consult" class="slider_btn default_btn">
+                    Курсқа жазылу
+                </a>
+            </div>
+            <div class="courses_item">
+                <img src="img/eng.jpg" alt="" width="60px" height="60px">
+                <div class="courses_item-title">
+                    Ағылшын тілі
+                </div>
+                <div class="courses_item-text">
+                  B1 - топ
+                </div>
+                <a href="#consult" class="slider_btn default_btn">
+                    Курсқа жазылу
+                </a>
+            </div>
           </div>
        </div>
     </section>
@@ -149,7 +147,7 @@
                 Ұстаздарымыздың басым көпшілігі шетелде тәлім алған.
             </div>
 
-            <a href="#" class="slider_btn default_btn">
+            <a href="#" class="about_btn default_btn">
                 Толығырақ білу
             </a>
         </div>
@@ -172,25 +170,24 @@
                 </div>
               </div>
               <div class="form__box">
-                <form method="get" action="database.php">
-                    <input id="indicator" type="hidden" name="state">
+                <form>
                   <div class="form__box-inner">
                     <div class="form__box-left">
                       <label>
                         E-mail
-                        <input type="text" name="email">
+                        <input type="text">
                       </label>
                       <label>
                        Телефон номер
-                        <input type="text" name="phone_num">
+                        <input type="text">
                       </label>
                       <label>
                         Аты-жөні
-                        <input type="text" name="username">
+                        <input type="text">
                       </label>
                       <label>
                         Тақырыбы
-                        <select name="topic_of_msg">
+                        <select>
                           <option>_________</option>
                           <option>Курсқа жазылу</option>
                           <option>Жеңілдіктер</option>
@@ -203,19 +200,12 @@
                     <div class="form__box-right">
                       <label>
                         Мәтін
-                        <textarea name="message"></textarea>
+                        <textarea></textarea>
                       </label>
-                      <button onclick="add()" class="about_btn default_btn" type="submit">Жүктеу</button>
+                      <button class="about_btn default_btn" type="submit">Жүктеу</button>
                     </div>
                   </div>
                 </form>
-                <script>
-                    // Solution adding user
-                     function add(){
-                         document.getElementById("indicator").value="add";
-                     }
-                 </script>
-
               </div>
             </div>
           </div>
@@ -262,7 +252,6 @@
         </div>
     </footer>
 
-
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script src="js/jquery.fancybox.min.js"></script>
@@ -286,6 +275,23 @@
         })
     </script>
 
+    <!--for Registr to cousrses-->
+    <script>
+        function scrollTo(element){
+            window.scroll({
+                left: 0,
+                top: element.offsetTop,
+                behavior: "smooth"
+            })
+        }
+
+        var regist1 = document.querySelector('.slider_btn default_btn');
+        var regist2 = document.querySelector('#consult');
+        regist1.addEventListener('click', () =>{
+            scrollTo(regist2);
+        })
+    </script>
+
     <!--for Consultation block-->
     <script>
         function scrollTo(element){
@@ -300,23 +306,6 @@
         var consult2 = document.querySelector('#consult');
         consult1.addEventListener('click', () =>{
             scrollTo(consult2);
-        })
-    </script>
-
-     <!--for Registr to cousrses-->
-     <script>
-        function scrollTo(element){
-            window.scroll({
-                left: 0,
-                top: element.offsetTop,
-                behavior: "smooth"
-            })
-        }
-
-        var regist1 = document.querySelector('.slider_btn default_btn');
-        var regist2 = document.querySelector('#consult');
-        regist1.addEventListener('click', () =>{
-            scrollTo(regist2);
         })
     </script>
 </body>
