@@ -34,10 +34,10 @@
             </div>   
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Негізгі бет</a></li>
+                <li><a href="index.blade.php">Негізгі бет</a></li>
                     <li><a class="aboutus" href="#">Біз жайлы</a></li>
-                    <li><a href="courses.html">Курстар</a></li>
-                    <li><a href="private.html">Жеке кабинет</a></li>
+                    <li><a href="courses.blade.php">Курстар</a></li>
+                    <li><a href="private.blade.php">Жеке кабинет</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,6 +69,28 @@
     
     </form> <br><br>
 
+    <!--About us-->
+    <section class="about" id="aboutus">
+        <div class="container">
+            <div class="about_inner">
+            <div class="about_title">
+                Біз жайлы
+            </div>
+
+            <div class="about_text">
+                Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге
+                өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның 
+                беделді ЖОО-н бітірген студенттер құрайды.
+                Ұстаздарымыздың басым көпшілігі шетелде тәлім алған.
+            </div>
+
+            <a href="#" class="slider_btn default_btn">
+                Толығырақ білу
+            </a>
+        </div>
+        </div>
+    </section>
+    <br>
     <!--Footer-->
     <footer class="footer">
         <div class="footer_content">

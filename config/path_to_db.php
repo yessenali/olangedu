@@ -24,8 +24,8 @@ function add($username,$email,$phone_num,$topic_of_msg,$message){
 	$mysqli -> close();
 }
 
-	
+if(isset($_GET['username']) && isset($_GET['email']) && isset($_GET['phone_num']) && isset($_GET['topic_of_msg']) && isset($_GET['message'])){
 add($_GET['username'], $_GET['email'], $_GET['phone_num'], $_GET['topic_of_msg'], $_GET['message']);
 
-
+}
 ?>

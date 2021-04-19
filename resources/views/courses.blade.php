@@ -34,10 +34,10 @@
             </div>   
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Негізгі бет</a></li>
+                    <li><a href="index.blade.php">Негізгі бет</a></li>
                     <li><a class="aboutus" href="#">Біз жайлы</a></li>
-                    <li><a href="courses.html">Курстар</a></li>
-                    <li><a href="private.html">Жеке кабинет</a></li>
+                    <li><a href="courses.blade.php">Курстар</a></li>
+                    <li><a href="private.blade.php">Жеке кабинет</a></li>
                 </ul>
             </nav>
         </div>

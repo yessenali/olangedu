@@ -106,7 +106,7 @@ header{
     display: none;
 }
 .slider{
-    background:  linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url(../img/mainfon.jpg);
+    background:  linear-gradient( rgb(175, 175, 175), rgba(0, 0, 0, 0.5) ), url(../img/mainfon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

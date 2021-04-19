@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/index.blade.php', function () {
+    return view('index');
+});
+
+Route::get('/courses.blade.php', function () {
+    return view('courses');
+});
+
+Route::get('/private.blade.php', function () {
+    return view('private');
+});
+
