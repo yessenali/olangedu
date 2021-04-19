@@ -15,7 +15,7 @@ return $mysqli;
 
 function add($username,$email,$phone_num,$topic_of_msg,$message){
 	$mysqli = connection();
-	$statement = $mysqli -> prepare("insert into users(username,email,phone_num,topic_of_msg,message) values (?,?,?,?,?)");
+	$statement = $mysqli -> prepare("insert into sending_users(username,email,phone_num,topic_of_msg,message) values (?,?,?,?,?)");
 	
 	
 	$statement-> bind_param("ssiss", $username,$email,$phone_num,$topic_of_msg,$message);

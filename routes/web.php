@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,7 @@ Route::get('/private.blade.php', function () {
     return view('private');
 });
 
+Route::get('/uploadfile', 'App\Http\Controllers\UploadFileController@index');
+Route::post('/uploadfile', 'App\Http\Controllers\UploadFileController@showUploadFile');
+
+Route::get('mail/send', [MailController::class, 'send']);
