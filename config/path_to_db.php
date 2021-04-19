@@ -29,19 +29,19 @@ add($_GET['username'], $_GET['email'], $_GET['phone_num'], $_GET['topic_of_msg']
 
 }
 
-function add1($topic_of_msg,$message){
+function add1($username,$topic_of_msg,$message){
 	$mysqli = connection();
-	$statement = $mysqli -> prepare("insert into messages(topic_of_msg,message) values (?,?)");
+	$statement = $mysqli -> prepare("insert into messages(username,topic_of_msg,message) values (?,?,?)");
 	
 	
-	$statement-> bind_param("ss", $topic_of_msg,$message);
+	$statement-> bind_param("sss", $username,$topic_of_msg,$message);
 	$statement -> execute();
 	$statement -> close();
 	$mysqli -> close();
 }
 
-if(isset($_GET['topic_of_msg']) && isset($_GET['message'])){
-add1( $_GET['topic_of_msg'], $_GET['message']);
+if(isset($_GET['username']) && isset($_GET['topic_of_msg']) && isset($_GET['message'])){
+add1($_GET['username'],$_GET['topic_of_msg'], $_GET['message']);
 
 }
 

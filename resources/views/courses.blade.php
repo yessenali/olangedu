@@ -202,10 +202,16 @@
                         Мәтін
                         <textarea></textarea>
                       </label>
-                      <button class="about_btn default_btn" type="submit">Жүктеу</button>
+                      <button onclick="add()" class="about_btn default_btn" type="submit">Жүктеу</button>
                     </div>
                   </div>
                 </form>
+                <script>
+                    // Solution adding user
+                     function add(){
+                         document.getElementById("indicator").value="add";
+                     }
+                 </script>
               </div>
             </div>
           </div>
