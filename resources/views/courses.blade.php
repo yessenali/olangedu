@@ -154,7 +154,7 @@
         </div>
     </section>
 
-    <!--Free Consultation-->
+    <!--For Consultation-->
     <section class="form" id="consult">
         <div class="container">
           <div class="form__inner">
@@ -171,24 +171,24 @@
               </div>
               <div class="form__box">
                 <form method="get">
-                <input id="indicator" type="hidden" name="state">
+                    <input id="indicator" type="hidden" name="state">
                   <div class="form__box-inner">
                     <div class="form__box-left">
                       <label>
                         E-mail
-                        <input type="text">
+                        <input type="text" name="email">
                       </label>
                       <label>
                        Телефон номер
-                        <input type="text">
+                        <input type="text" name="phone_num">
                       </label>
                       <label>
                         Аты-жөні
-                        <input type="text">
+                        <input type="text" name="username">
                       </label>
                       <label>
                         Тақырыбы
-                        <select>
+                        <select name="topic_of_msg">
                           <option>_________</option>
                           <option>Курсқа жазылу</option>
                           <option>Жеңілдіктер</option>
@@ -201,18 +201,19 @@
                     <div class="form__box-right">
                       <label>
                         Мәтін
-                        <textarea></textarea>
+                        <textarea name="message"></textarea>
                       </label>
                       <button onclick="add()" class="about_btn default_btn" type="submit">Жүктеу</button>
                     </div>
                   </div>
                 </form>
                 <script>
-                    // Solution adding user 
+                    // Solution adding user
                      function add(){
                          document.getElementById("indicator").value="add";
                      }
                  </script>
+
               </div>
             </div>
           </div>
