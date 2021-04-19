@@ -30,7 +30,10 @@ Route::get('/private.blade.php', function () {
     return view('private');
 });
 
-Route::get('/uploadfile', 'App\Http\Controllers\UploadFileController@index');
-Route::post('/uploadfile', 'App\Http\Controllers\UploadFileController@showUploadFile');
+Route::get('/multiuploads', 'App\Http\Controllers\UploadController@uploadForm');
+Route::post('/multiuploads', 'App\Http\Controllers\UploadController@uploadSubmit');
+
+Route::get('/uploadfile','App\Http\Controllers\UploadFileController@index');
+Route::post('/uploadfile','App\Http\Controllers\UploadFileController@showUploadFile');
 
 Route::get('mail/send', [MailController::class, 'send']);
