@@ -42,7 +42,7 @@ Route::get('mail/send', [MailController::class, 'send']);
 
 Route::get('/{lang}', function($lang){
     App::setlocale($lang);
-    return view('home');
+    return view('index');
 });
 
 Route::get('/{lang}', 'App\Http\Controllers\LocalizationController@index');

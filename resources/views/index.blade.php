@@ -17,19 +17,20 @@
 <body>
 @extends('layout')
 @section('content')
+    
     <section class="slider">
         <div class="container">
             <div class="slider_inner">
                 <div class="slider_item">
                     <div class="slider_item-content">
                     <div class="slider_title">
-                        Olang онлайн курс платформасы
+                        {{__("Olang онлайн курс платформасы")}}
                     </div>
                     <div class="slider_text">
                         
                     </div>
                     <a href="#consult" class="slider_btn default_btn">
-                        Курсқа жазылу
+                        {{__("Курсқа жазылу")}}
                     </a>
                     
                     </div>
@@ -38,13 +39,13 @@
             <div class="slider_item">
                 <div class="slider_item-content">
                 <div class="slider_title">
-                    Let's study together
+                    {{__("Let's study together")}}
                 </div>
                 <div class="slider_text">
                    
                 </div>
                 <a href="#consult" class="slider_btn default_btn">
-                    Get started
+                    {{__("Get started")}}
                 </a>
                 
                 </div>
@@ -53,13 +54,13 @@
         <div class="slider_item">
             <div class="slider_item-content">
             <div class="slider_title">
-                Онлайн образовательная платформа Оланг
+                {{__("Онлайн образовательная платформа Оланг")}}
             </div>
             <div class="slider_text">
               
             </div>
             <a href="#consult" class="slider_btn default_btn">
-                Записаться
+            {{__("Записаться")}}
             </a>
             
             </div>
@@ -74,10 +75,10 @@
            <div class="services_item">
                <img src="img/icon-1.png" alt="" width="60px" height="60px">
                <div class="services_item-title">
-                   ТІЛ КУРСТАРЫ
+               {{__("ТІЛ КУРСТАРЫ")}}
                </div>
                <div class="services_item-text">
-                   Ағылшын, түрік, араб, орыс тілдерінде курстар
+                   {{__("Ағылшын, түрік, араб, орыс тілдерінде курстар")}}
                </div>
 
            </div>
@@ -85,10 +86,10 @@
            <div class="services_item">
             <img  src="img/icon-2.png"  alt="" width="60px" height="60px">
             <div class="services_item-title">
-                ВИДЕО ПЛАТФОРМА
+            {{__("ВИДЕО ПЛАТФОРМА")}}
             </div>
             <div class="services_item-text">
-                Арнайы жазылған видео дәрістерді көру үшін жеке кабинетіңіз болады
+                {{__("Арнайы жазылған видео дәрістерді көру үшін жеке кабинетіңіз болады")}}
             </div>
             
         </div>
@@ -96,10 +97,10 @@
         <div class="services_item">
             <img src="img/icon-4.png" alt="" width="60px" height="60px">
             <div class="services_item-title">
-                24/7
+                {{__("24/7")}}
             </div>
             <div class="services_item-text">
-               Дәрістер күніне 24 сағат бойы ашық тұрады
+               {{__("Дәрістер күніне 24 сағат бойы ашық тұрады")}}
             </div>
             
         </div>
@@ -112,18 +113,18 @@
         <div class="container">
             <div class="about_inner">
             <div class="about_title">
-                Біз жайлы
+                {{__("Біз жайлы")}}
             </div>
 
             <div class="about_text">
-                Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге
+                {{__("Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге
                 өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның 
                 беделді ЖОО-н бітірген студенттер құрайды.
-                Ұстаздарымыздың басым көпшілігі шетелде тәлім алған.
+                Ұстаздарымыздың басым көпшілігі шетелде тәлім алған.")}}"
             </div>
 
             <a href="#" class="slider_btn default_btn">
-                Толығырақ білу
+                {{__("Толығырақ білу")}}
             </a>
         </div>
         </div>
@@ -136,12 +137,12 @@
             <div class="form__content">
               <div class="form__title-box">
                 <div class="form__title">
-                  Консультация алу
+                  {{__("Консультация алу")}}
                 </div>
                 <div class="form__text">
-                  Курсқа жазылу жөніндегі хабарламаны жүктеңіз, немесе
-                  Кез келген сұрағыңызды қойсаңыз болады. <br>
-                        7-8 сағаттың ішінде жауап қайтарылады
+                  {{__("Курсқа жазылу жөніндегі хабарламаны жүктеңіз, немесе
+                  Кез келген сұрағыңызды қойсаңыз болады.
+                        7-8 сағаттың ішінде жауап қайтарылады")}}
                 </div>
               </div>
               <div class="form__box">
@@ -154,31 +155,31 @@
                         <input type="text" name="email">
                       </label>
                       <label>
-                       Телефон номер
+                       {{__("Телефон номер")}}
                         <input type="text" name="phone_num">
                       </label>
                       <label>
-                        Аты-жөні
+                        {{__("Аты-жөні")}}
                         <input type="text" name="username">
                       </label>
                       <label>
-                        Тақырыбы
+                        {{__("Тақырыбы")}}
                         <select name="topic_of_msg">
                           <option>_________</option>
-                          <option>Курсқа жазылу</option>
-                          <option>Жеңілдіктер</option>
-                          <option>Ұстаздар</option>
-                          <option>Тапсырмалар</option>
+                          <option>{{__("Курсқа жазылу")}}</option>
+                          <option>{{__("Жеңілдіктер")}}</option>
+                          <option>{{__("Ұстаздар")}}</option>
+                          <option>{{__("Тапсырмалар")}}</option>
                          <!--Мен Ағылшын тілі A1- топ курсына жазыламын-->
                         </select>
                       </label>
                     </div>
                     <div class="form__box-right">
                       <label>
-                        Мәтін
+                      {{__("Мәтін")}}
                         <textarea name="message"></textarea>
                       </label>
-                      <button onclick="add()" class="about_btn default_btn" type="submit">Жүктеу</button>
+                      <button onclick="add()" class="about_btn default_btn" type="submit">{{__("Жүктеу")}}</button>
                     </div>
                   </div>
                 </form>
@@ -203,18 +204,18 @@
                 <div class="footer_inner">
                 <div class="footer_info">
                     <div class="footer_title">
-                        Olang онлайн курс платформасы
+                        {{__("Olang онлайн курс платформасы")}}
                     </div>
                     <div class="footer_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        {{__("Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sapiente harum voluptates error, deserunt pariatur omnis quis quas ad tempora ex,
-                        molestias.
-                    </div>
-                    <a class="header_btn" href="#">Тегін консультация</a>
+                        molestias.")}}
+                    </div><br>
+                    <a class="header_btn" href="#">{{__("Тегін консультация")}}</a>
                     <ul class="footer_list">
                         <br>
                         <li><a class="footer_email" href="#" data-fancybox data-src="#modal" href="javascript:;">olangeducation@gmail.com</a></li>
-                        <li><a class="footer_adress" href="#">Жетісай а, Асанов 13 үй</a></li>
+                        <li><a class="footer_adress" href="#">{{__("Жетісай а, Асанов 13 үй")}}</a></li>
                     </ul>
                 </div>
                 <div class="footer_map">

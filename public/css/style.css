@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 a{
-    text-decoration: none;
+    text-decoration: none!important;
     display: inline-block;
 }
 ul,li{
@@ -32,7 +32,7 @@ header{
 .header_btn{
     float: right;
     line-height: 36px;
-    color: #1b1b1b;
+    color: #1b1b1b !important;
     background-color: #ffc222;
     padding: 5px 20px 4px 50px;
     font-size: 16px;
@@ -51,7 +51,7 @@ header{
     display: block;
 }
 .header_email{
-    color: #cbcacb;
+    color: #cbcacb!important;
     letter-spacing: 0.25px;
     line-height: 45px;
     position: relative;
@@ -78,7 +78,7 @@ header{
     color: #ffc222;
 }
 .header_content{
-    padding: 34px 0px 23px;
+    padding: 34px 0px 24px;
 }
 .header_content-inner{
     display: flex;
@@ -102,11 +102,14 @@ header{
 .menu li + li{
     padding-left: 10px;
 }
+.menu li>a>.li_nav{
+    width: 200px;
+}
 #modal{
     display: none;
 }
 .slider{
-    background:  linear-gradient( rgb(81, 81, 81), rgba(0, 0, 0, 0.5) ), url(../img/mainfon.jpg);
+    background:  linear-gradient( rgb(81, 81, 81), rgba(0, 0, 0, 0.5) ) url(../img/fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -407,7 +410,7 @@ header{
 .form__title,
 .news__title{
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 0;
   line-height: 24px;
   color: #212020;
   font-family: 'Roboto', sans-serif;
@@ -429,6 +432,7 @@ header{
   background-position: bottom right;
 }
 .form__box{
+  font-weight: 200;
   max-width: 850px;
   padding-top: 45px;
 }
@@ -452,6 +456,7 @@ header{
   width: 100%;
 }
 .form__box-inner label{
+  font-weight: 200!important;
   line-height: 36px;
   color: #282828;
   font-family: 'Roboto', sans-serif;
