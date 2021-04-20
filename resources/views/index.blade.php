@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -120,7 +121,7 @@
                 {{__("Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге
                 өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның 
                 беделді ЖОО-н бітірген студенттер құрайды.
-                Ұстаздарымыздың басым көпшілігі шетелде тәлім алған.")}}"
+                Ұстаздарымыздың басым көпшілігі шетелде тәлім алған")}}
             </div>
 
             <a href="#" class="slider_btn default_btn">
@@ -237,7 +238,25 @@
     </footer>
 
     <div id="modal">
-        <form>
+        @if(count($errors) > 0)
+         <div class="alert alert-danger">
+              <button type="button" class="close" data-dismiss="alert">x</button>
+              <ul>
+              @foreach($errors->all() as $error)
+              <li>{{ $error }}</li>
+              @endforeach
+              </ul>          
+         </div>
+        @endif
+
+        @if($message = Session::get('success'))
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <strong>{{ $message }}</strong>
+        </div>
+        @endif
+        <form method="POST" action="{{ url('sendemail/send') }}">
+        {{csrf_field()}}
         <input type="text" placeholder="Email">
         <input type="text" placeholder="Платформа жайында пікіріңіз">
         <input type="submit" value="Отправить">
