@@ -19,3 +19,5 @@ if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
 }
 
 require_once __DIR__.'/public/index.php';
+
+create table messages(messageID int, username varchar(30),  topic_of_msg varchar(30), message varchar(30), userID int, FOREIGN KEY(userID) REFERENCES);
