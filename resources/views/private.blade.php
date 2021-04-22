@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -15,48 +16,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header"> 
-        <div class="header_top">
-            <div class="container">
-                <div class="header_contacts">
-                <a class="header_email" href="#">olangeducation@gmail.com</a>
-                <a class="header_btn" href="#">Тегін консультация</a>
-            </div>
-         </div>
-        </div>
-        <div class="header_content">
-            <div class="container">
-                <div class="header_content-inner">
-            <div class="header_logo">
-                <a href="#">
-                    <img src="img/logo.png" alt="logotype" width="145px" height="40px">
-                </a>
-            </div>   
-            <nav class="menu">
-                <ul>
-                <li><a href="index.blade.php">Негізгі бет</a></li>
-                    <li><a class="aboutus" href="#">Біз жайлы</a></li>
-                    <li><a href="courses.blade.php">Курстар</a></li>
-                    <li><a href="private.blade.php">Жеке кабинет</a></li>
-                </ul>
-            </nav>
-        </div>
-     </div>
-    </div>
-    </header>
+@extends('layout')
+@section('content')
 
     <form class="reg_private" >
-        <h1 class="h1_reg" title="Тіркелу формасы">Тіркелу</h1>
+        <h1 class="h1_reg" title="Тіркелу формасы">{{__("Тіркелу")}}</h1>
         <div class="group">
-            <label class="label_reg" for="">Қолданушының аты</label>
+            <label class="label_reg" for="">{{__("Қолданушының аты")}}</label>
             <input class="input_reg" type="text">
         </div>
         <div class="group">
-            <label class="label_reg" for="">Құпия сөз:</label>
+            <label class="label_reg" for="">{{__("Құпия сөз")}}</label>
             <input class="input_reg" type="password">
         </div>
         <div class="group">
-            <label class="label_reg" for="">Қайта енгізіңіз:</label>
+            <label class="label_reg" for="">{{__("Қайта енгізіңіз")}}</label>
             <input class="input_reg" type="password">
         </div>
         <div class="group">
@@ -64,33 +38,91 @@
             <input class="input_reg" type="email">
         </div>
         <div class="group">
-            <center><button class="registration">Тіркелу</button></center>
+            <center><button class="registration">{{__("Тіркелу")}}</button></center>
         </div>
     
     </form> <br><br>
 
-    <!--About us-->
-    <section class="about" id="aboutus">
+  <!--About us-->
+  <section class="about" id="aboutus">
         <div class="container">
             <div class="about_inner">
             <div class="about_title">
-                Біз жайлы
+                {{ __("Біз жайлы")}}
             </div>
 
             <div class="about_text">
-                Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге
-                өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның 
-                беделді ЖОО-н бітірген студенттер құрайды.
-                Ұстаздарымыздың басым көпшілігі шетелде тәлім алған.
+                {{ __("Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның беделді ЖОО-н бітірген студенттер құрайды. Ұстаздарымыздың басым көпшілігі шетелде тәлім алған")}}
             </div>
 
             <a href="#" class="slider_btn default_btn">
-                Толығырақ білу
+                {{ __("Толығырақ білу")}}
             </a>
         </div>
         </div>
     </section>
-    <br>
+
+    <!--Free Consultation-->
+    <section class="form" id="consult">
+        <div class="container">
+          <div class="form__inner">
+            <div class="form__content">
+              <div class="form__title-box">
+                <div class="form__title">
+                  {{__("Консультация алу")}}
+                </div>
+                <div class="form__text">
+                  {{__("Курсқа жазылу жөніндегі хабарламаны жүктеңіз, немесе Кез келген сұрағыңызды қойсаңыз болады. 7-8 сағаттың ішінде жауап қайтарылады")}}
+                </div>
+              </div>
+              <div class="form__box">
+                <form method="post" action="http://localhost/olangedu/public/" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <!-- <input id="indicator" type="hidden" name="state"> -->
+                  <div class="form__box-inner">
+                    <div class="form__box-left">
+                      <label>
+                        E-mail
+                        <input type="text" class="form-control" name="email">
+                      </label>
+                      <label>
+                       {{__("Телефон номер")}}
+                        <input type="text" class="form-control" name="phone_num">
+                      </label>
+                      <label>
+                        {{__("Аты-жөні")}}
+                        <input type="text" class="form-control" name="name">
+                      </label>
+                      <label>
+                        {{__("Резюме")}}
+                        <input type="file" class="form-control" name="photos[]"/>
+                        <br/><br/>
+                         <!--Мен Ағылшын тілі A1- топ курсына жазыламын-->
+                      </label>
+                    </div>
+                    <div class="form__box-right">
+                      <label>
+                      {{__("Мәтін")}}
+                        <textarea class="form-control" name="message"></textarea>
+                      </label>
+                      <input style="width: 100px; float:right; border-radius:20px; background-color:#ffc836;color:#fff;margin-top:2px" type="submit" value="Жүктеу"/>
+                    </div>
+                  </div>
+                </form>
+                <script>
+                    // Solution adding user
+                     function add(){
+                         document.getElementById("indicator").value="add";
+                     }
+                 </script>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     <!--Footer-->
     <footer class="footer">
         <div class="footer_content">
@@ -98,18 +130,18 @@
                 <div class="footer_inner">
                 <div class="footer_info">
                     <div class="footer_title">
-                        Olang онлайн курс платформасы
+                        {{__("Olang онлайн курс платформасы")}}
                     </div>
                     <div class="footer_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        {{__("Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sapiente harum voluptates error, deserunt pariatur omnis quis quas ad tempora ex,
-                        molestias.
-                    </div>
-                    <a class="header_btn" href="#">Тегін консультация</a>
+                        molestias.")}}
+                    </div><br>
+                    <a class="header_btn" href="#">{{__("Тегін консультация")}}</a>
                     <ul class="footer_list">
                         <br>
-                        <li><a class="footer_email" href="#">olangeducation@gmail.com</a></li>
-                        <li><a class="footer_adress" href="#">Жетісай а, Асанов 13 үй</a></li>
+                        <li><a class="footer_email" href="#" data-fancybox data-src="#modal" href="javascript:;">olangeducation@gmail.com</a></li>
+                        <li><a class="footer_adress" href="#">{{__("Жетісай а, Асанов 13 үй")}}</a></li>
                     </ul>
                 </div>
                 <div class="footer_map">
@@ -124,19 +156,22 @@
         <div class="footer_copy">
             <div class="container">
                 <div class="footer_text">
-                    © 2021 Created by Yessenali Zhanaidar. Все права защищены.
+                    © 2021 Created by Yessenali Zhanaidar.
                 </div>
             </div>
         </div>
     </footer>
 
     <div id="modal">
-        <form>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваше phone">
-            <input type="submit" value="Отправить">
+        <form method="get" action="{{ url('mail/send') }}">
+        <input type="text" placeholder="Email">
+        <input class="form" type="text" placeholder="Платформа жайында пікіріңіз">
+        <input type="submit" value="Отправить" class="btn btn-success">
         </form>
-      </div>
+
+    </div>
+
+   
 
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
@@ -177,5 +212,25 @@
             scrollTo(consult2);
         })
     </script>
+
+     <!--for Registr to cousrses-->
+     <script>
+        function scrollTo(element){
+            window.scroll({
+                left: 0,
+                top: element.offsetTop,
+                behavior: "smooth"
+            })
+        }
+
+        var regist1 = document.querySelector('.slider_btn default_btn');
+        var regist2 = document.querySelector('#consult');
+        regist1.addEventListener('click', () =>{
+            scrollTo(regist2);
+        })
+    </script>
+
+
+@endsection
 </body>
 </html>

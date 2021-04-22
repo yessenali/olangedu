@@ -2,20 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Item;
-use App\Models\ItemDetails;
+use App\Models\User;
+use App\Models\UserDetails;
 use Illuminate\Http\Request;
 
 class UploadController extends Controller
 {
     public function uploadForm(){
-        return view('upload_form');
+        return view('index');
     }
 
     public function uploadSubmit(Request $request){
         $this->validate($request, [
+            'email' => 'required',
+            'phone' => 'required',
             'name' => 'required',
             'photos' => 'required',
+            'message' => 'required'
         ]);
         if($request->hasFile('photos')){
             $allowedfileExtension=['pdf', 'jpg', 'png', 'docx', 'txt'];
@@ -25,11 +28,11 @@ class UploadController extends Controller
                 $extension = $file->getClientOriginalExtension();
                 $check=in_array($extension,$allowedfileExtension);
                 if($check){
-                    $items= Item::create($request->all());
+                    $users= User::create($request->all());
                     foreach($request->photos as $photo){
                         $filename = $photo->store('files');
-                        ItemDetails::create([
-                            'item_id' => $items->id,
+                        UserDetails::create([
+                            'user_id' => $users->id,
                             'filename' => $filename
                         ]);
                     }
@@ -43,4 +46,3 @@ class UploadController extends Controller
         }
     }
 }
-?>

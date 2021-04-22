@@ -11,11 +11,12 @@ class MailController extends Controller
 {
     public function send(){
         $objDemo = new \stdClass();
-        $objDemo->demo_one = 'Demo One Value';
-        $objDemo->demo_two = 'Demo Two Value';
+        $objDemo->email = '190103419@stu.sdu.edu.kz';
+        $objDemo->message = 'Hello';
         $objDemo->sender = 'Yessenali';
         $objDemo->receiver = 'Olang education';
 
+        
         Mail::to("olangeducation@gmail.com")->send(new DemoEmail($objDemo));
     }
 }

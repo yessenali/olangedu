@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    Hello <i> {{ $demo->receiver }} </i>,
-    
-    Thank You,
+    <i> {{ $demo->receiver }} </i>,
+                {{$demo->email}}
 
     <br>
+        {{$demo->message}}
     <i> {{ $demo->sender }} </i>
     
 

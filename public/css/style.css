@@ -39,7 +39,7 @@ header{
     position: relative;
 }
 .header_btn:before{
-    content: "\f27b";
+    content: "\f003";
     font-family: 'icomoon';
     position: absolute;
     left: 22px;
@@ -101,9 +101,6 @@ header{
 }
 .menu li + li{
     padding-left: 10px;
-}
-.menu li>a>.li_nav{
-    width: 200px;
 }
 #modal{
     display: none;
@@ -467,7 +464,7 @@ header{
   outline: none;
   height: 40px;
   border: 1px solid #e6e6e6;
-  padding: 0px 10px;
+  
 }
 .form__box-inner select{
   outline: none;
@@ -483,8 +480,8 @@ header{
     resize: none;
     margin-bottom: 44px;
 }
-.form__box-inner button{
-    float: right;
+.form__box-inner input{
+    padding: 0 !important;
 }
 
 .h1_reg{

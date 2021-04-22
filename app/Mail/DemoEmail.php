@@ -31,12 +31,8 @@ class DemoEmail extends Mailable
      */
     public function build() {
         return $this->from('190103419@stu.sdu.edu.kz')
-                    ->view('mails.demo')
+                    ->view('mails.demo_plain')
                     ->text('mails.demo_plain')
-                    ->with(
-                        [
-                        'testVarOne' => '1',
-                        'testVarTwo' => '2',
-                    ]);
+                    ->with('demo', $this->demo);
     }
 }

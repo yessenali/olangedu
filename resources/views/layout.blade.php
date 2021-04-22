@@ -60,19 +60,19 @@
     								@break
     								@case('kz')
     								<img width="20" src="{{asset('img/kz.png')}}">
-    								Kazakh
+    								Қазақ
     								@break
                                     @default
                                     <img width="20" src="{{asset('img/kz.png')}}">
-    								Kazakh  
+    								Қазақ 
 
     						@endswitch
                             
     								<span class="caret"></span>
                         </a>
-                        <div id="switch" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <div style="min-width: 111px !important;" id="switch" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="en"><img width="20" src="{{asset('img/en.jpg')}}"> English</a> <br>
-                            <a class="dropdown-item" href="kz"><img width="20" src="{{asset('img/kz.png')}}"> Kazakh</a>
+                            <a class="dropdown-item" href="kz"><img width="20" src="{{asset('img/kz.png')}}"> Қазақ</a>
                         </div>
                     </li>
                 </ul>
@@ -85,11 +85,14 @@
             </nav>
         </div>
      </div>
+     
     </div>
     </header>
 
     <main class="py-4">
         @yield('content')
     </main>
+
+    
 </body>
 </html>

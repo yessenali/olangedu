@@ -32,12 +32,10 @@ Route::get('/private.blade.php', function () {
     return view('private');
 });
 
-Route::get('/multiuploads', 'App\Http\Controllers\UploadController@uploadForm');
-Route::post('/multiuploads', 'App\Http\Controllers\UploadController@uploadSubmit');
+Route::get('/', 'App\Http\Controllers\UploadController@uploadForm');
+Route::post('/', 'App\Http\Controllers\UploadController@uploadSubmit');
 
-Route::get('/uploadfile','App\Http\Controllers\UploadFileController@index');
-Route::post('/uploadfile','App\Http\Controllers\UploadFileController@showUploadFile');
-
+Route::get('mail/send', [MailController::class, 'send']);
 
 Route::get('/{lang}', function($lang){
     App::setlocale($lang);
@@ -45,6 +43,3 @@ Route::get('/{lang}', function($lang){
 });
 
 Route::get('/{lang}', 'App\Http\Controllers\LocalizationController@index');
-
-Route::get('/sendemail', 'App\Http\Controllers\SendEmailController@index');
-Route::post('/sendemail/send', 'App\Http\Controllers\SendEmailController@send');

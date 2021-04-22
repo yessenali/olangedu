@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
     rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,600" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -25,13 +29,13 @@
                 <div class="slider_item">
                     <div class="slider_item-content">
                     <div class="slider_title">
-                        {{__("Olang онлайн курс платформасы")}}
+                        {{ __("Olang онлайн курс платформасы")}}
                     </div>
                     <div class="slider_text">
                         
                     </div>
                     <a href="#consult" class="slider_btn default_btn">
-                        {{__("Курсқа жазылу")}}
+                        {{ __("Курсқа жазылу")}}
                     </a>
                     
                     </div>
@@ -40,13 +44,13 @@
             <div class="slider_item">
                 <div class="slider_item-content">
                 <div class="slider_title">
-                    {{__("Let's study together")}}
+                    {{ __("Let's study together")}}
                 </div>
                 <div class="slider_text">
                    
                 </div>
                 <a href="#consult" class="slider_btn default_btn">
-                    {{__("Get started")}}
+                    {{ __("Get started")}}
                 </a>
                 
                 </div>
@@ -55,13 +59,13 @@
         <div class="slider_item">
             <div class="slider_item-content">
             <div class="slider_title">
-                {{__("Онлайн образовательная платформа Оланг")}}
+                {{ __("Онлайн образовательная платформа Оланг")}}
             </div>
             <div class="slider_text">
               
             </div>
             <a href="#consult" class="slider_btn default_btn">
-            {{__("Записаться")}}
+            {{ __("Записаться")}}
             </a>
             
             </div>
@@ -76,10 +80,10 @@
            <div class="services_item">
                <img src="img/icon-1.png" alt="" width="60px" height="60px">
                <div class="services_item-title">
-               {{__("ТІЛ КУРСТАРЫ")}}
+               {{ __("ТІЛ КУРСТАРЫ")}}
                </div>
                <div class="services_item-text">
-                   {{__("Ағылшын, түрік, араб, орыс тілдерінде курстар")}}
+                   {{ __("Ағылшын, түрік, араб, орыс тілдерінде курстар")}}
                </div>
 
            </div>
@@ -87,10 +91,10 @@
            <div class="services_item">
             <img  src="img/icon-2.png"  alt="" width="60px" height="60px">
             <div class="services_item-title">
-            {{__("ВИДЕО ПЛАТФОРМА")}}
+            {{ __("ВИДЕО ПЛАТФОРМА")}}
             </div>
             <div class="services_item-text">
-                {{__("Арнайы жазылған видео дәрістерді көру үшін жеке кабинетіңіз болады")}}
+                {{ __("Арнайы жазылған видео дәрістерді көру үшін жеке кабинетіңіз болады")}}
             </div>
             
         </div>
@@ -98,10 +102,10 @@
         <div class="services_item">
             <img src="img/icon-4.png" alt="" width="60px" height="60px">
             <div class="services_item-title">
-                {{__("24/7")}}
+                {{ __("24/7")}}
             </div>
             <div class="services_item-text">
-               {{__("Дәрістер күніне 24 сағат бойы ашық тұрады")}}
+               {{ __("Дәрістер күніне 24 сағат бойы ашық тұрады")}}
             </div>
             
         </div>
@@ -114,18 +118,15 @@
         <div class="container">
             <div class="about_inner">
             <div class="about_title">
-                {{__("Біз жайлы")}}
+                {{ __("Біз жайлы")}}
             </div>
 
             <div class="about_text">
-                {{__("Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге
-                өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның 
-                беделді ЖОО-н бітірген студенттер құрайды.
-                Ұстаздарымыздың басым көпшілігі шетелде тәлім алған")}}
+                {{ __("Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның беделді ЖОО-н бітірген студенттер құрайды. Ұстаздарымыздың басым көпшілігі шетелде тәлім алған")}}
             </div>
 
             <a href="#" class="slider_btn default_btn">
-                {{__("Толығырақ білу")}}
+                {{ __("Толығырақ білу")}}
             </a>
         </div>
         </div>
@@ -141,46 +142,40 @@
                   {{__("Консультация алу")}}
                 </div>
                 <div class="form__text">
-                  {{__("Курсқа жазылу жөніндегі хабарламаны жүктеңіз, немесе
-                  Кез келген сұрағыңызды қойсаңыз болады.
-                        7-8 сағаттың ішінде жауап қайтарылады")}}
+                  {{__("Курсқа жазылу жөніндегі хабарламаны жүктеңіз, немесе Кез келген сұрағыңызды қойсаңыз болады. 7-8 сағаттың ішінде жауап қайтарылады")}}
                 </div>
               </div>
               <div class="form__box">
-                <form method="get">
-                    <input id="indicator" type="hidden" name="state">
+                <form method="post" action="http://localhost/olangedu/public/" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <!-- <input id="indicator" type="hidden" name="state"> -->
                   <div class="form__box-inner">
                     <div class="form__box-left">
                       <label>
                         E-mail
-                        <input type="text" name="email">
+                        <input type="text" class="form-control" name="email">
                       </label>
                       <label>
                        {{__("Телефон номер")}}
-                        <input type="text" name="phone_num">
+                        <input type="text" class="form-control" name="phone_num">
                       </label>
                       <label>
                         {{__("Аты-жөні")}}
-                        <input type="text" name="username">
+                        <input type="text" class="form-control" name="name">
                       </label>
                       <label>
-                        {{__("Тақырыбы")}}
-                        <select name="topic_of_msg">
-                          <option>_________</option>
-                          <option>{{__("Курсқа жазылу")}}</option>
-                          <option>{{__("Жеңілдіктер")}}</option>
-                          <option>{{__("Ұстаздар")}}</option>
-                          <option>{{__("Тапсырмалар")}}</option>
+                        {{__("Резюме")}}
+                        <input type="file" class="form-control" name="photos[]"/>
+                        <br/><br/>
                          <!--Мен Ағылшын тілі A1- топ курсына жазыламын-->
-                        </select>
                       </label>
                     </div>
                     <div class="form__box-right">
                       <label>
                       {{__("Мәтін")}}
-                        <textarea name="message"></textarea>
+                        <textarea class="form-control" name="message"></textarea>
                       </label>
-                      <button onclick="add()" class="about_btn default_btn" type="submit">{{__("Жүктеу")}}</button>
+                      <input style="width: 100px; float:right; border-radius:20px; background-color:#ffc836;color:#fff;margin-top:2px" type="submit" value="Жүктеу"/>
                     </div>
                   </div>
                 </form>
@@ -238,31 +233,15 @@
     </footer>
 
     <div id="modal">
-        @if(count($errors) > 0)
-         <div class="alert alert-danger">
-              <button type="button" class="close" data-dismiss="alert">x</button>
-              <ul>
-              @foreach($errors->all() as $error)
-              <li>{{ $error }}</li>
-              @endforeach
-              </ul>          
-         </div>
-        @endif
-
-        @if($message = Session::get('success'))
-        <div class="alert alert-success alert-block">
-            <button type="button" class="close" data-dismiss="alert">x</button>
-            <strong>{{ $message }}</strong>
-        </div>
-        @endif
-        <form method="POST" action="{{ url('sendemail/send') }}">
-        {{csrf_field()}}
+        <form method="get" action="{{ url('mail/send') }}">
         <input type="text" placeholder="Email">
-        <input type="text" placeholder="Платформа жайында пікіріңіз">
-        <input type="submit" value="Отправить">
+        <input class="form" type="text" placeholder="Платформа жайында пікіріңіз">
+        <input type="submit" value="Отправить" class="btn btn-success">
         </form>
+
     </div>
 
+   
 
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 

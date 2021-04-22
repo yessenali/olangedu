@@ -15,7 +15,7 @@
         "Оланг платформасы оқушылардың және студенттердің тілдік деңгейін көтеруге өз септігін тигізуде. Қазіргі таңда, ұстаздар тізбегін Қазақстанның беделді ЖОО-н бітірген студенттер құрайды. Ұстаздарымыздың басым көпшілігі шетелде тәлім алған" : "Olang platform to improve the language skills of schoolchildren and students contributes. Currently, the chain of teachers in Kazakhstan graduates of prestigious universities",
         "Толығырақ білу" : "More details",
         "Консультация алу" : "Get consultation",
-        "Курсқа жазылу жөніндегі хабарламаны жүктеңіз, немесе Кез келген сұрағыңызды қойсаңыз болады.7-8 сағаттың ішінде жауап қайтарылады" : "Send a course subscription notification, or You can ask any question.The answer will be given within 7-8 hours",
+        "Курсқа жазылу жөніндегі хабарламаны жүктеңіз, немесе Кез келген сұрағыңызды қойсаңыз болады. 7-8 сағаттың ішінде жауап қайтарылады" : "Send a course subscription notification, or You can ask any question.The answer will be given within 7-8 hours",
         "Телефон номер" : "Phone" ,
         "Аты-жөні" : "Name",
         "Тақырыбы" : "Topic",
@@ -25,8 +25,11 @@
         "Мәтін" : "Message",
         "Жүктеу" : "Send",
         "Жетісай а" : "Zhetysai a",
-        "Асанов 13" : "Asanov 13"
-
+        "Асанов 13" : "Asanov 13",
+        "Тіркелу": "REGISTRATION",
+        "Қолданушының аты": "USERNAME",
+        "Құпия сөз": "PASSWORD",
+        "Қайта енгізіңіз": "WRITE AGAIN"
   
 
 }

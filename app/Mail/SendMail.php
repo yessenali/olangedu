@@ -30,6 +30,6 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->from('olangeducation@gmail.com')->subject('New Subject')->view('view_sending.blade.php')->with('data', $this->data);
+        return $this->from('190103419@stu.sdu.edu.kz')->subject('New Subject')->view('view_sending')->with('data', $this->data);
     }
 }
