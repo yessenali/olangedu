@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .header_btn::before{
+            content: "\f0b1";
+        }
+    </style>
 </head>
 <body>
 
