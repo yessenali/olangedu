@@ -29,7 +29,10 @@
         "Тіркелу": "REGISTRATION",
         "Қолданушының аты": "USERNAME",
         "Құпия сөз": "PASSWORD",
-        "Қайта енгізіңіз": "WRITE AGAIN"
+        "Қайта енгізіңіз": "WRITE AGAIN",
+        "Жұмысқа орналасу": "Get job",
+        "Резюмеңізді қалдырыңыз. Сізбен біздің менеджерлер хабарласады.": "Leave your resume. You will be contacted by our managers.",
+        "Резюме": "Resume"
   
 
 }

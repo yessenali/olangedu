@@ -38,8 +38,8 @@ header{
     font-size: 16px;
     position: relative;
 }
-.header_btn:before{
-    content: "\f003";
+.header_btn::before {
+    content: "\f0b1";
     font-family: 'icomoon';
     position: absolute;
     left: 22px;

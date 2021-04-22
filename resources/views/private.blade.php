@@ -137,7 +137,7 @@
                         Sapiente harum voluptates error, deserunt pariatur omnis quis quas ad tempora ex,
                         molestias.")}}
                     </div><br>
-                    <a class="header_btn" href="#">{{__("Тегін консультация")}}</a>
+                    <a class="header_btn" href="#">{{__("Жұмысқа орналасу")}}</a>
                     <ul class="footer_list">
                         <br>
                         <li><a class="footer_email" href="#" data-fancybox data-src="#modal" href="javascript:;">olangeducation@gmail.com</a></li>
