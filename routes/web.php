@@ -32,8 +32,6 @@ Route::get('/private.blade.php', function () {
     return view('private');
 });
 
-Route::get('/', 'App\Http\Controllers\UploadController@uploadForm');
-Route::post('/', 'App\Http\Controllers\UploadController@uploadSubmit');
 
 Route::get('mail/send', [MailController::class, 'send']);
 
@@ -43,3 +41,7 @@ Route::get('/{lang}', function($lang){
 });
 
 Route::get('/{lang}', 'App\Http\Controllers\LocalizationController@index');
+
+Route::get('/index.blade.php', 'App\Http\Controllers\EmployeeController@index');
+
+Route::post('/addFile', 'App\Http\Controllers\EmployeeController@store')->name('addFile');

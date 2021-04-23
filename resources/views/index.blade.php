@@ -146,26 +146,26 @@
                 </div>
               </div>
               <div class="form__box">
-                <form method="post" action="http://localhost/olangedu/public/" enctype="multipart/form-data">
+                <form method="post" action="{{ route('addFile') }}" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <!-- <input id="indicator" type="hidden" name="state"> -->
                   <div class="form__box-inner">
                     <div class="form__box-left">
                       <label>
-                        E-mail
-                        <input type="text" class="form-control" name="email">
-                      </label>
-                      <label>
-                       {{__("Телефон номер")}}
-                        <input type="text" class="form-control" name="phone_num">
-                      </label>
-                      <label>
-                        {{__("Аты-жөні")}}
+                      {{__("Аты-жөні")}}
                         <input type="text" class="form-control" name="name">
                       </label>
                       <label>
+                       Email
+                        <input type="text" class="form-control" name="email">
+                      </label>
+                      <label>
+                      {{__("Телефон номер")}}
+                        <input type="text" class="form-control" name="phone">
+                      </label>
+                      <label>
                         {{__("Резюме")}}
-                        <input type="file" class="form-control" name="photos[]"/>
+                        <input type="file" class="form-control" name="resume"/>
                         <br/><br/>
                          <!--Мен Ағылшын тілі A1- топ курсына жазыламын-->
                       </label>
@@ -175,7 +175,7 @@
                       {{__("Мәтін")}}
                         <textarea class="form-control" name="message"></textarea>
                       </label>
-                      <input style="width: 100px; float:right; border-radius:20px; background-color:#ffc836;color:#fff;margin-top:2px" type="submit" value="Жүктеу"/>
+                      <input name="submit" style="width: 100px; float:right; border-radius:20px; background-color:#ffc836;color:#fff;margin-top:2px" type="submit" value="Жүктеу"/>
                     </div>
                   </div>
                 </form>
@@ -203,11 +203,25 @@
                         {{__("Olang онлайн курс платформасы")}}
                     </div>
                     <div class="footer_text">
-                        {{__("Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sapiente harum voluptates error, deserunt pariatur omnis quis quas ad tempora ex,
-                        molestias.")}}
+                        {{__("Жаңалықтардан хабардар болу үшін бізге жазылыңыз")}}
                     </div><br>
-                    <a class="header_btn" href="#">{{__("Жұмысқа орналасу")}}</a>
+                   
+                    <!--Follow-->
+                    <div class="follow_box">
+                    <form method="get" action="{{ url('mail/send') }}">
+                     <div class="follow_box-inner">
+                         <div class="follow_box-left">
+                    <input  class="form-control" placeholder="Email">
+                    </div>
+                    <div class="follow_box-right">
+                    <button class="follow_btn">{{__("Жазылу")}}</button>
+                    </div>
+                </div>
+                </form>
+                </div>
+                    
+                    
+                    
                     <ul class="footer_list">
                         <br>
                         <li><a class="footer_email" href="#" data-fancybox data-src="#modal" href="javascript:;">olangeducation@gmail.com</a></li>
@@ -232,14 +246,6 @@
         </div>
     </footer>
 
-    <div id="modal">
-        <form method="get" action="{{ url('mail/send') }}">
-        <input type="text" placeholder="Email">
-        <input class="form" type="text" placeholder="Платформа жайында пікіріңіз">
-        <input type="submit" value="Отправить" class="btn btn-success">
-        </form>
-
-    </div>
 
    
 
